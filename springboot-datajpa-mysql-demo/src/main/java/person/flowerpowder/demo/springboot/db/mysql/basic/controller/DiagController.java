@@ -32,14 +32,9 @@ public class DiagController {
     @RequestMapping(path = "/demo/user/list")
     public Map<String, Object> listUser() throws Exception {
 
-        List<String> userNames = userMgmtService.listAllNames();
+
 
         Map<String, Object> resp = new HashMap<>();
-
-
-
-        resp.put("users", userNames);
-
 
 
         return resp;
